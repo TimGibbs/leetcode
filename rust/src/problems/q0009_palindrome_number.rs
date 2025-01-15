@@ -19,7 +19,7 @@ pub fn is_palindrome(x: i32) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use crate::problems::q9_palindrome_number::is_palindrome;
+    use crate::problems::q0009_palindrome_number::is_palindrome;
 
     #[test]
     fn case1() {
