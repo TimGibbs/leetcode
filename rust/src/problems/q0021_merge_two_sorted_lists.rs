@@ -22,22 +22,26 @@ mod tests {
     use super::*;
     #[test]
     fn case1() {
-        let a = Some(Box::new(ListNode::new_list(&[1,2,4])));
-        let b = Some(Box::new(ListNode::new_list(&[1,3,4])));
-        let e = Some(Box::new(ListNode::new_list(&[1,1,2,3,4,4])));
+        let a = ListNode::new_list(&[1,2,4]);
+        let b = ListNode::new_list(&[1,3,4]);
+        let e = ListNode::new_list(&[1,1,2,3,4,4]);
 
         assert_eq!(merge_two_lists(a,b), e);
     }
     #[test]
     fn case2() {
-        assert_eq!(merge_two_lists(None,None), None);
+        let a = ListNode::new_list(&[]);
+        let b = ListNode::new_list(&[]);
+        let e = ListNode::new_list(&[]);
+        assert_eq!(merge_two_lists(a,b), e);
 
     }
     #[test]
     fn case3() {
-        let b = Some(Box::new(ListNode::new_list(&[0])));
-        let e = Some(Box::new(ListNode::new_list(&[0])));
+        let a = ListNode::new_list(&[]);
+        let b = ListNode::new_list(&[0]);
+        let e = ListNode::new_list(&[0]);
 
-        assert_eq!(merge_two_lists(None,b), e);
+        assert_eq!(merge_two_lists(a,b), e);
     }
 }

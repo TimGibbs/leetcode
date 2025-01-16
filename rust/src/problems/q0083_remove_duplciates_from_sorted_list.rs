@@ -22,14 +22,14 @@ mod tests {
     use super::*;
     #[test]
     fn case1() {
-        let i = Some(Box::new(ListNode::new_list(&[1,1,2])));
-        let a = Some(Box::new(ListNode::new_list(&[1,2])));
+        let i = ListNode::new_list(&[1,1,2]);
+        let a = ListNode::new_list(&[1,2]);
         assert_eq!(delete_duplicates(i),a)
     }
     #[test]
     fn case2() {
-        let i = Some(Box::new(ListNode::new_list(&[1,1,2,3,3])));
-        let a = Some(Box::new(ListNode::new_list(&[1,2,3])));
+        let i = ListNode::new_list(&[1,1,2,3,3]);
+        let a = ListNode::new_list(&[1,2,3]);
         assert_eq!(delete_duplicates(i),a);
     }
 

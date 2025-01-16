@@ -14,15 +14,16 @@ impl ListNode {
     }
 
     #[inline]
-    pub fn new_list(values: &[i32]) -> Self {
+    pub fn new_list(values: &[i32]) -> Option<Box<Self>> {
+        if values.is_empty() { return None; }
         let next = if values.len() > 1 {
-             Some(Box::new(ListNode::new_list(&values[1..])))
+            ListNode::new_list(&values[1..])
         } else {
             None
         };
-        ListNode {
+        Some(Box::new(ListNode {
             next,
             val: values[0]
-        }
+        }))
     }
 }

@@ -28,9 +28,9 @@ mod tests {
     use super::*;
     #[test]
     fn case1() {
-        let a = Some(Box::new(ListNode::new_list(&[2, 4, 3])));
-        let b = Some(Box::new(ListNode::new_list(&[5, 6, 4])));
-        let e = Some(Box::new(ListNode::new_list(&[7, 0, 8])));
+        let a = ListNode::new_list(&[2, 4, 3]);
+        let b = ListNode::new_list(&[5, 6, 4]);
+        let e = ListNode::new_list(&[7, 0, 8]);
 
         assert_eq!(add_two_numbers(a,b), e);
     }
@@ -44,9 +44,9 @@ mod tests {
     }
     #[test]
     fn case3() {
-        let a = Some(Box::new(ListNode::new_list(&[9,9,9,9,9,9,9])));
-        let b = Some(Box::new(ListNode::new_list(&[9,9,9,9])));
-        let e = Some(Box::new(ListNode::new_list(&[8,9,9,9,0,0,0,1])));
+        let a = ListNode::new_list(&[9,9,9,9,9,9,9]);
+        let b = ListNode::new_list(&[9,9,9,9]);
+        let e = ListNode::new_list(&[8,9,9,9,0,0,0,1]);
 
         assert_eq!(add_two_numbers(a,b), e);
     }
