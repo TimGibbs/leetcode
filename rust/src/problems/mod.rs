@@ -33,3 +33,4 @@ mod q2185_counting_words_with_a_given_prefix;
 mod q2657_find_the_prefix_common_array_of_two_arrays;
 mod q3042_count_prefix_and_suffix_pairs_i;
 mod q3223_minimum_length_of_string_after_operations;
+mod q2425_bitwise_xor_of_all_pairings;
