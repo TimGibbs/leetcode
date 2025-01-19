@@ -35,3 +35,5 @@ mod q3042_count_prefix_and_suffix_pairs_i;
 mod q3223_minimum_length_of_string_after_operations;
 mod q2425_bitwise_xor_of_all_pairings;
 mod q2683_neighboring_bitwise_xor;
+mod q1368_minimum_cost_to_makle_at_least_one_valid_path_in_a_grid;
+mod q0407_trapping_raing_water_ii;

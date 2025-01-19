@@ -21,5 +21,5 @@ mod tests {
     fn case3() {
         assert_eq!(does_valid_array_exist(vec![1, 0]), false);
     }
-    
+
 }
