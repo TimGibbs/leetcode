@@ -38,3 +38,6 @@ mod q2683_neighboring_bitwise_xor;
 mod q1368_minimum_cost_to_makle_at_least_one_valid_path_in_a_grid;
 mod q0407_trapping_raing_water_ii;
 mod q2661_first_completely_painted_row_or_column;
+mod q2017_grid_game;
+mod q1765_map_of_highest_peak;
+mod q1267_count_servers_that_communicate;
