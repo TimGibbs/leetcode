@@ -43,3 +43,4 @@ mod q1765_map_of_highest_peak;
 mod q1267_count_servers_that_communicate;
 mod q0802_find_eventual_safe_states;
 mod q1462_course_schedule_iv;
+mod q2658_maximum_number_of_fish_in_a_grid;
